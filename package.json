@@ -110,7 +110,7 @@
   },
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "xo && remark . -qfo",
+    "lint": "xo && ./node_modules/remark-cli/cli.js . -qfo",
     "test": "npm run lint && npm run ava",
     "test-coverage": "npm run lint && npm run nyc",
     "ava": "cross-env NODE_ENV=test ava",
