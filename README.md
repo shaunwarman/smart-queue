@@ -55,6 +55,9 @@ const asyncTask = () => {
 cqueue.enqueue(asyncTask)
 ```
 
+## Options
+- `concurrency` - (default: `Infinity`) - concurrent tasks to run
+- `retries` - (default: `3`) - retry attempts on failed tasks
 
 ## Contributors
 

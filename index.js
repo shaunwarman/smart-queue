@@ -2,7 +2,7 @@ const PQueue = require('p-queue');
 const pretry = require('p-retry');
 
 class SmartQueue extends PQueue {
-  constructor(options) {
+  constructor(options = {}) {
     super(options);
     const {
       retries = 3,
