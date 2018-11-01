@@ -26,6 +26,11 @@ test('init options', t => {
   t.true(queue._concurrency === 3);
 });
 
+test('default error handler', t => {
+  const queue = new SmartQueue({});
+  t.true(queue.errorHandler === queue.defaultErrorHandler);
+});
+
 test('custom error handler', t => {
   const queue = new SmartQueue({
     errorHandler: () => {
