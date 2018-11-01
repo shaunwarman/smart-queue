@@ -1,7 +1,7 @@
 {
   "name": "smart-cq",
   "description": "A priority queue with configurable retry and concurrency",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Shaun Warman <shaunwarman1@gmail.com> (https://shaunwarman.com)",
   "bugs": {
     "url": "https://github.com/shaunwarman/smart-queue/issues",
